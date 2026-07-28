@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy and Terms & Conditions for AI Photo Artist app by Prahant Labs." />
+  <title>AI Photo Artist – Privacy Policy & Terms</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0d0f1a;
+      --card:     #151928;
+      --border:   #1e2338;
+      --accent:   #7c5cfc;
+      --pink:     #e040fb;
+      --text:     #e8eaf0;
+      --muted:    #8890aa;
+      --white:    #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    /* ── Hero ── */
+    header {
+      background: linear-gradient(135deg, #1a1040 0%, #0d0f1a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 56px 24px 40px;
+      text-align: center;
+    }
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(124,92,252,0.15);
+      border: 1px solid rgba(124,92,252,0.4);
+      border-radius: 50px;
+      padding: 8px 20px;
+      margin-bottom: 24px;
+    }
+    .logo-badge span { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: .5px; }
+    header h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; color: var(--white); margin-bottom: 12px; }
+    header h1 em { font-style: normal; background: linear-gradient(90deg, var(--accent), var(--pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    header p { color: var(--muted); font-size: 15px; max-width: 520px; margin: 0 auto; }
+
+    /* ── Nav tabs ── */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 24px 16px;
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 24px;
+      border: 1px solid transparent;
+      transition: all .2s;
+    }
+    nav a:hover, nav a.active {
+      color: var(--white);
+      background: rgba(124,92,252,0.2);
+      border-color: rgba(124,92,252,0.5);
+    }
+
+    /* ── Main Layout ── */
+    main { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    /* ── Section ── */
+    section { margin-bottom: 48px; scroll-margin-top: 80px; }
+    .meta { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+    .meta-chip {
+      background: rgba(124,92,252,0.1);
+      border: 1px solid rgba(124,92,252,0.3);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .meta-chip strong { color: var(--accent); }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--pink));
+      font-size: 12px;
+      font-weight: 800;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    h3 { font-size: 16px; font-weight: 700; color: var(--white); margin: 20px 0 8px; }
+
+    p { color: var(--muted); margin-bottom: 12px; }
+
+    ul { list-style: none; padding: 0; margin-bottom: 12px; }
+    ul li {
+      position: relative;
+      padding-left: 22px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .card.highlight { border-color: rgba(124,92,252,0.4); }
+
+    /* ── Table ── */
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+    th {
+      background: rgba(124,92,252,0.15);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      text-align: left;
+      padding: 10px 14px;
+      letter-spacing: .5px;
+    }
+    td {
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 13px;
+      border-bottom: 1px solid var(--border);
+    }
+    tr:last-child td { border-bottom: none; }
+
+    /* ── Page break between Privacy & Terms ── */
+    .page-section-title {
+      font-size: 30px;
+      font-weight: 900;
+      color: var(--white);
+      margin: 64px 0 32px;
+      text-align: center;
+    }
+    .page-section-title span { background: linear-gradient(90deg, var(--accent), var(--pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .divider { height: 1px; background: var(--border); margin: 48px 0; }
+
+    /* ── Contact ── */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(124,92,252,0.15), rgba(224,64,251,0.1));
+      border: 1px solid rgba(124,92,252,0.35);
+      border-radius: 20px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .contact-card h3 { color: var(--white); margin-bottom: 8px; font-size: 20px; }
+    .contact-card p { max-width: 400px; margin: 0 auto 20px; }
+    .contact-card a {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), var(--pink));
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 28px;
+      border-radius: 50px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══════════════════════════════════════════════════════════════ -->
+<header>
+  <div class="logo-badge">
+    <span>AI Photo Artist by Prahant Labs</span>
+  </div>
+  <h1>Privacy Policy &amp;<br/><em>Terms &amp; Conditions</em></h1>
+  <p>We believe your privacy is a right, not an afterthought. This document explains everything we do — and everything we don't — with your data.</p>
+</header>
+
+<!-- ═══ NAV ═══════════════════════════════════════════════════════════════════ -->
+<nav>
+  <a href="#privacy" class="active">Privacy Policy</a>
+  <a href="#terms">Terms &amp; Conditions</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ═══ MAIN ═══════════════════════════════════════════════════════════════════ -->
+<main>
+
+  <!-- ── PRIVACY POLICY ───────────────────────────────────────────────────── -->
+  <div class="meta">
+    <div class="meta-chip"><strong>App:</strong> AI Photo Artist</div>
+    <div class="meta-chip"><strong>Developer:</strong> Prahant Labs</div>
+    <div class="meta-chip"><strong>Package:</strong> com.lbstudio.ai.photo.artist</div>
+    <div class="meta-chip"><strong>Effective:</strong> July 28, 2026</div>
+  </div>
+
+  <p id="privacy" style="color: var(--muted); margin-bottom: 32px; scroll-margin-top: 80px;">
+    This Privacy Policy describes how AI Photo Artist ("we", "our", or "the App"), developed by Prahant Labs, collects, uses, stores, and protects your information when you use our application on Android and iOS devices. By using AI Photo Artist, you agree to the terms of this Privacy Policy.
+  </p>
+
+  <!-- 1 -->
+  <section>
+    <h2><span class="num">1</span> Information We Collect</h2>
+
+    <h3>1.1 Photos and Images</h3>
+    <p>When you use the Style Transform, Object Eraser, or Face Swap features, you grant the app temporary access to photos you explicitly select from your device gallery or capture via your camera. These photos are used exclusively to perform the requested AI transformation and are never stored on our servers beyond the immediate processing window.</p>
+
+    <h3>1.2 Locally Stored Data</h3>
+    <div class="card">
+      <table>
+        <thead><tr><th>Data Type</th><th>Where Stored</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>Generated artworks</td><td>Device local storage only</td><td>Your personal gallery of creations</td></tr>
+          <tr><td>Text prompts</td><td>Device local storage only</td><td>History and prompt recall</td></tr>
+          <tr><td>Theme preference (Dark/Light)</td><td>Device shared preferences</td><td>UI personalization</td></tr>
+          <tr><td>Language setting</td><td>Device shared preferences</td><td>Localization</td></tr>
+          <tr><td>API key (optional, user-provided)</td><td>Device encrypted storage</td><td>Connecting personal Fal.ai account</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>No account registration, email, phone number, or personal identity information is required to use AI Photo Artist.</p>
+
+    <h3>1.3 Technical Usage Data</h3>
+    <p>We do not collect analytics, crash logs, device identifiers, IP addresses, or behavioral data through our own systems. Third-party AI processing services (Fal.ai, Hugging Face) may receive the image data you submit in order to perform the AI computation. Their data handling is governed by their own respective privacy policies.</p>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2><span class="num">2</span> How We Use Your Information</h2>
+    <ul>
+      <li>To perform the AI style transformation, image generation, or object erasing operation you explicitly requested.</li>
+      <li>To temporarily display the generated result image on your device screen.</li>
+      <li>To allow you to optionally save the result to your device's native photo gallery.</li>
+      <li>To remember your UI preferences (theme and language) across app sessions.</li>
+      <li>To provide Help, FAQ, and legal documentation within the app.</li>
+    </ul>
+    <p>We do NOT use your photos or data to train AI models, create advertising profiles, sell to third parties, or for any purpose not explicitly described in this policy.</p>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2><span class="num">3</span> Data Sharing and Third Parties</h2>
+    <div class="card highlight">
+      <h3>Third-Party AI Processing Services</h3>
+      <p>When you request an AI-powered style transformation or image generation, the image and/or text prompt you provide is transmitted to one of the following third-party GPU cloud processing services:</p>
+      <ul>
+        <li><strong>Fal.ai</strong> (fal.ai) – Image-to-image style transfer and FLUX generative models. Review their Privacy Policy at fal.ai/privacy.</li>
+        <li><strong>Hugging Face Inference API</strong> (huggingface.co) – AI model inference routing. Review their Privacy Policy at huggingface.co/privacy.</li>
+      </ul>
+      <p>These services process your submitted image data solely to perform the AI computation and return the result. We do not control their data retention practices and recommend reviewing their privacy policies.</p>
+    </div>
+    <p>We do not share your data with advertisers, data brokers, analytics companies, social networks, or any other third party beyond the AI processing services described above.</p>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2><span class="num">4</span> Device Permissions</h2>
+    <div class="card">
+      <table>
+        <thead><tr><th>Permission</th><th>Required / Optional</th><th>Why It Is Needed</th></tr></thead>
+        <tbody>
+          <tr><td>READ_MEDIA_IMAGES / Photos Library</td><td>Required</td><td>To let you select a reference photo from your gallery for AI style transformation</td></tr>
+          <tr><td>WRITE_EXTERNAL_STORAGE / Photo Library Write</td><td>Required</td><td>To save your generated AI artwork image to your device photo gallery</td></tr>
+          <tr><td>CAMERA</td><td>Optional</td><td>To let you capture a live photo directly within the app for immediate transformation</td></tr>
+          <tr><td>INTERNET</td><td>Required</td><td>To communicate with cloud AI processing engines (Fal.ai and Hugging Face) for generative AI features</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>All permission requests are made at the point of use with a system-level dialog. You may deny optional permissions without impacting core app functionality.</p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2><span class="num">5</span> Data Retention and Deletion</h2>
+    <ul>
+      <li>Photos you select for processing are held in device memory only for the duration of the AI processing operation and are immediately discarded after the result is returned.</li>
+      <li>Generated artwork images are stored locally on your device only and are fully under your control.</li>
+      <li>You can delete individual creations from the in-app Gallery at any time using the Delete button.</li>
+      <li>You can clear all locally cached data, prompt history, and settings by tapping "Clear Cache" in Settings, or by uninstalling the application.</li>
+      <li>There are no server-side user accounts, so there is no additional data deletion request process required.</li>
+    </ul>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2><span class="num">6</span> Children's Privacy</h2>
+    <p>AI Photo Artist is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at the address below and we will take appropriate action.</p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2><span class="num">7</span> Data Security</h2>
+    <ul>
+      <li>All network communications between the app and third-party AI processing services use industry-standard TLS 1.2 / TLS 1.3 encryption.</li>
+      <li>Your optional Fal.ai API key is stored using platform-level encrypted secure storage (Android Keystore / iOS Keychain).</li>
+      <li>All locally stored creations and preferences are stored in app-sandboxed storage, inaccessible to other apps on your device.</li>
+    </ul>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2><span class="num">8</span> Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Right to Access:</strong> You can view all data the app stores locally by browsing your Gallery, History, and Settings screens.</li>
+      <li><strong>Right to Deletion:</strong> You can delete all locally stored data at any time via Settings or by uninstalling the app.</li>
+      <li><strong>Right to Opt-Out:</strong> You may deny camera and gallery permissions at the OS level without losing core text-to-image functionality.</li>
+      <li><strong>GDPR (EU Users):</strong> If you are an EU resident, you have rights under GDPR including data portability and the right to object to processing. Contact us at the address below to exercise these rights.</li>
+      <li><strong>CCPA (California Users):</strong> We do not sell personal information. California residents have the right to know what data is collected and to request deletion.</li>
+    </ul>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <h2><span class="num">9</span> Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Effective Date" at the top of this document and post the revised policy at this URL. Continued use of AI Photo Artist after any changes constitutes your acceptance of the revised Privacy Policy. For material changes, we will make reasonable efforts to notify users within the app.</p>
+  </section>
+
+  <!-- ── DIVIDER ─────────────────────────────────────────────────────────── -->
+  <div class="divider"></div>
+  <div class="page-section-title" id="terms">Terms &amp; <span>Conditions</span></div>
+
+  <p style="color: var(--muted); margin-bottom: 32px;">
+    These Terms and Conditions ("Terms") govern your access to and use of AI Photo Artist ("the App"), developed and operated by Prahant Labs. By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, please uninstall and discontinue use of the App.
+  </p>
+
+  <!-- T1 -->
+  <section>
+    <h2><span class="num">1</span> Acceptance of Terms</h2>
+    <p>By accessing or using AI Photo Artist, you confirm that you are at least 13 years of age (or the applicable minimum age in your jurisdiction), and that you have read, understood, and agree to be bound by these Terms and our Privacy Policy, which is incorporated herein by reference.</p>
+  </section>
+
+  <!-- T2 -->
+  <section>
+    <h2><span class="num">2</span> License to Use</h2>
+    <p>Prahant Labs grants you a limited, non-exclusive, non-transferable, revocable license to use AI Photo Artist on your personal devices solely for your personal, non-commercial use, subject to these Terms.</p>
+    <p>You may NOT:</p>
+    <ul>
+      <li>Copy, modify, distribute, sell, or lease any part of the App or its underlying software.</li>
+      <li>Reverse engineer or attempt to extract the source code of the App.</li>
+      <li>Use the App in any manner that could disable, overburden, damage, or impair the App or servers.</li>
+      <li>Use automated scripts, bots, or scrapers to access the App or its AI generation endpoints.</li>
+    </ul>
+  </section>
+
+  <!-- T3 -->
+  <section>
+    <h2><span class="num">3</span> Intellectual Property</h2>
+    <h3>3.1 Your Content</h3>
+    <p>You retain full ownership of all photos you upload and all AI-generated artwork created through your prompts and inputs. By using AI Photo Artist, you grant Prahant Labs no license or rights to your uploaded photos or generated artwork.</p>
+    <h3>3.2 App Assets</h3>
+    <p>The AI Photo Artist brand name, logo, app interface design, code, templates, and all associated intellectual property remain the exclusive property of Prahant Labs and are protected by applicable intellectual property laws. You may not use our brand assets without prior written permission.</p>
+  </section>
+
+  <!-- T4 -->
+  <section>
+    <h2><span class="num">4</span> Acceptable Use Policy</h2>
+    <p>You agree to use AI Photo Artist only for lawful purposes. You expressly agree NOT to use the App to:</p>
+    <ul>
+      <li>Generate, store, or distribute images that are illegal, obscene, defamatory, harassing, threatening, or invasive of another person's privacy.</li>
+      <li>Create non-consensual intimate imagery (NCII), deepfakes, or any manipulated content designed to mislead, deceive, or harm any individual.</li>
+      <li>Infringe upon the intellectual property rights, privacy rights, or publicity rights of any third party.</li>
+      <li>Impersonate any person or entity, or falsely claim affiliation with any person or organization.</li>
+      <li>Generate content that promotes violence, hatred, discrimination, or illegal activity.</li>
+      <li>Use AI-generated content to spread misinformation, engage in fraud, or deceive others in a harmful way.</li>
+      <li>Circumvent, disable, or interfere with security features of the App or connected AI processing services.</li>
+    </ul>
+    <p>Prahant Labs reserves the right to terminate your access to the App if we become aware of a violation of this Acceptable Use Policy.</p>
+  </section>
+
+  <!-- T5 -->
+  <section>
+    <h2><span class="num">5</span> Third-Party AI Services</h2>
+    <p>AI Photo Artist uses third-party AI processing services including Fal.ai and Hugging Face to perform cloud-based image generation and transformation. Your use of these services through our App is also subject to their respective Terms of Service. We are not responsible for the availability, accuracy, or output of these third-party services.</p>
+  </section>
+
+  <!-- T6 -->
+  <section>
+    <h2><span class="num">6</span> Disclaimer of Warranties</h2>
+    <p>AI Photo Artist is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, non-infringement, or uninterrupted availability.</p>
+    <p>We do not warrant that:</p>
+    <ul>
+      <li>The App will be error-free or available at all times.</li>
+      <li>AI-generated results will meet any specific quality or accuracy standard.</li>
+      <li>Third-party AI processing services will be available or produce expected results.</li>
+    </ul>
+  </section>
+
+  <!-- T7 -->
+  <section>
+    <h2><span class="num">7</span> Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, Prahant Labs and its developers shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, goodwill, or other intangible losses, resulting from:</p>
+    <ul>
+      <li>Your use of or inability to use the App.</li>
+      <li>Any AI-generated content produced by the App.</li>
+      <li>Unauthorized access to or alteration of your data.</li>
+      <li>Conduct of any third party in connection with the App.</li>
+    </ul>
+  </section>
+
+  <!-- T8 -->
+  <section>
+    <h2><span class="num">8</span> Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in India.</p>
+  </section>
+
+  <!-- T9 -->
+  <section>
+    <h2><span class="num">9</span> Changes to Terms</h2>
+    <p>We reserve the right to modify these Terms at any time. Updated Terms will be posted at this URL with a revised "Effective Date". Your continued use of AI Photo Artist after any modification constitutes your acceptance of the new Terms. We encourage you to review these Terms periodically.</p>
+  </section>
+
+  <!-- ── CONTACT ─────────────────────────────────────────────────────────── -->
+  <div class="contact-card" id="contact">
+    <h3>Questions or Concerns?</h3>
+    <p>If you have any questions about this Privacy Policy, Terms and Conditions, or your data, please contact us.</p>
+    <a href="mailto:prahantlabs@gmail.com">Contact Prahant Labs</a>
+  </div>
+
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════════════════════ -->
+<footer>
+  <p>Copyright &copy; 2026 <strong>Prahant Labs</strong>. All rights reserved.</p>
+  <p style="margin-top: 6px;">AI Photo Artist &bull; Package: com.lbstudio.ai.photo.artist &bull; Version 1.0.0</p>
+</footer>
+
+<script>
+  // Highlight active nav link on scroll
+  const sections = [
+    { id: 'privacy', link: 0 },
+    { id: 'terms', link: 1 },
+    { id: 'contact', link: 2 },
+  ];
+  const links = document.querySelectorAll('nav a');
+  window.addEventListener('scroll', () => {
+    let active = 0;
+    sections.forEach((s, i) => {
+      const el = document.getElementById(s.id);
+      if (el && window.scrollY >= el.offsetTop - 120) active = i;
+    });
+    links.forEach((l, i) => l.classList.toggle('active', i === active));
+  });
+</script>
+
+</body>
+</html>
