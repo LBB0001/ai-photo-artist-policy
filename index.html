@@ -238,7 +238,7 @@
     <div class="meta-chip"><strong>App:</strong> AI Photo Artist</div>
     <div class="meta-chip"><strong>Developer:</strong> Prahant Labs</div>
     <div class="meta-chip"><strong>Package:</strong> com.lbstudio.ai.photo.artist</div>
-    <div class="meta-chip"><strong>Effective:</strong> July 28, 2026</div>
+    <div class="meta-chip"><strong>Effective:</strong> August 12, 2026</div>
   </div>
 
   <p id="privacy" style="color: var(--muted); margin-bottom: 32px; scroll-margin-top: 80px;">
@@ -250,7 +250,7 @@
     <h2><span class="num">1</span> Information We Collect</h2>
 
     <h3>1.1 Photos and Images</h3>
-    <p>When you use the Style Transform, Object Eraser, or Face Swap features, you grant the app temporary access to photos you explicitly select from your device gallery or capture via your camera. These photos are used exclusively to perform the requested AI transformation and are never stored on our servers beyond the immediate processing window.</p>
+    <p>When you use the Style Transform, Object Eraser, or Face Swap features, you grant the app temporary access to photos you explicitly select from your device gallery or capture via your camera. These photos are used exclusively to perform the requested AI transformation. To do so, they are uploaded to the third-party AI processing providers described in Section 3. We operate no servers of our own and retain no copy of your photos.</p>
 
     <h3>1.2 Locally Stored Data</h3>
     <div class="card">
@@ -293,6 +293,7 @@
       <ul>
         <li><strong>Fal.ai</strong> (fal.ai) – Image-to-image style transfer and FLUX generative models. Review their Privacy Policy at fal.ai/privacy.</li>
         <li><strong>Hugging Face Inference API</strong> (huggingface.co) – AI model inference routing. Review their Privacy Policy at huggingface.co/privacy.</li>
+        <li><strong>Pollinations</strong> (pollinations.ai) – Fallback image generation used when the services above are unavailable.</li>
       </ul>
       <p>These services process your submitted image data solely to perform the AI computation and return the result. We do not control their data retention practices and recommend reviewing their privacy policies.</p>
     </div>
@@ -309,7 +310,7 @@
           <tr><td>READ_MEDIA_IMAGES / Photos Library</td><td>Required</td><td>To let you select a reference photo from your gallery for AI style transformation</td></tr>
           <tr><td>WRITE_EXTERNAL_STORAGE / Photo Library Write</td><td>Required</td><td>To save your generated AI artwork image to your device photo gallery</td></tr>
           <tr><td>CAMERA</td><td>Optional</td><td>To let you capture a live photo directly within the app for immediate transformation</td></tr>
-          <tr><td>INTERNET</td><td>Required</td><td>To communicate with cloud AI processing engines (Fal.ai and Hugging Face) for generative AI features</td></tr>
+          <tr><td>INTERNET</td><td>Required</td><td>To communicate with cloud AI processing engines (Fal.ai, Hugging Face, and Pollinations) for generative AI features</td></tr>
         </tbody>
       </table>
     </div>
@@ -320,7 +321,7 @@
   <section>
     <h2><span class="num">5</span> Data Retention and Deletion</h2>
     <ul>
-      <li>Photos you select for processing are held in device memory only for the duration of the AI processing operation and are immediately discarded after the result is returned.</li>
+      <li>Photos you select for processing are uploaded to the third-party AI providers listed in Section 3 in order to perform the requested transformation. Depending on the provider, an uploaded image may be stored on that provider's servers or content delivery network for the duration of, and for a period after, the processing request. Retention of that copy is governed by the provider's own policy, not by us. We operate no servers of our own and keep no copy of your photos.</li>
       <li>Generated artwork images are stored locally on your device only and are fully under your control.</li>
       <li>You can delete individual creations from the in-app Gallery at any time using the Delete button.</li>
       <li>You can clear all locally cached data, prompt history, and settings by tapping "Clear Cache" in Settings, or by uninstalling the application.</li>
